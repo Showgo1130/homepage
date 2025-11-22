@@ -6,52 +6,43 @@
     <meta name="description" content="お問い合わせ">
     <title>Contact - Showgo's Apps</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <h1 class="logo">Showgo's Apps</h1>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="apps/index.html">Apps</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                    <li><a href="apps/index.html" data-i18n="nav.apps">アプリ</a></li>
+                    <li><a href="privacy.html" data-i18n="nav.privacy">プライバシーポリシー</a></li>
+                    <li><a href="terms.html" data-i18n="nav.terms">利用規約</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav.contact">お問い合わせ</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <button data-lang="ja">日本語</button>
+                    <button data-lang="en">English</button>
+                </div>
+            </div>
         </div>
     </nav>
 
     <section class="contact">
         <div class="container">
-            <h2>お問い合わせ</h2>
-            <p>アプリに関するご質問、ご要望、バグ報告などは、以下の方法でお気軽にお問い合わせください。</p>
+            <h2 data-i18n="contact.title">お問い合わせ</h2>
+            <p data-i18n="contact.subtitle">アプリに関するご質問、ご要望、バグ報告などは、以下の方法でお気軽にお問い合わせください。</p>
             
             <div class="contact-methods">
                 <div class="contact-card">
-                    <h3>GitHub</h3>
-                    <p>バグ報告や機能要望は、GitHubのIssuesでお願いします。</p>
-                    <a href="https://github.com/Showgo1130" class="btn" target="_blank">GitHub Profile</a>
+                    <h3 data-i18n="contact.x.title">X (Twitter)</h3>
+                    <p data-i18n="contact.x.desc">アプリの最新情報やお知らせはXで発信しています。</p>
+                    <a href="https://x.com/goshow12167" class="btn" target="_blank">@goshow12167</a>
                 </div>
 
                 <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>その他のお問い合わせは、メールでご連絡ください。</p>
-                    <a href="mailto:your.email@example.com" class="btn">メールを送る</a>
-                </div>
-            </div>
-
-            <div class="faq">
-                <h3>よくある質問</h3>
-                <div class="faq-item">
-                    <h4>Q: アプリが動作しない場合はどうすればいいですか？</h4>
-                    <p>A: まずアプリを再起動してみてください。それでも解決しない場合は、上記の連絡先からお問い合わせください。</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q: データのバックアップ方法は？</h4>
-                    <p>A: アプリ内の設定メニューからバックアップ機能をご利用ください。</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q: 新機能のリクエストはできますか？</h4>
-                    <p>A: はい、GitHubのIssuesまたはメールでご連絡ください。すべてのリクエストを検討させていただきます。</p>
+                    <h3 data-i18n="contact.email.title">Email</h3>
+                    <p>goshowkaihatsu@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -59,8 +50,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Showgo. All rights reserved.</p>
-            <p><a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+            <p data-i18n="footer.rights">&copy; 2025 Showgo. All rights reserved.</p>
+            <p><a href="privacy.html" data-i18n="nav.privacy">プライバシーポリシー</a> | <a href="terms.html" data-i18n="nav.terms">利用規約</a> | <a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></p>
         </div>
     </footer>
 </body>

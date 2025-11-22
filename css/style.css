@@ -439,6 +439,35 @@ footer a:hover {
     }
 }
 
+/* Language Switcher */
+.lang-switch {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lang-switch button {
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #666;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.lang-switch button:hover {
+    background-color: #f5f5f5;
+    border-color: #4CAF50;
+}
+
+.lang-switch button.active {
+    background-color: #4CAF50;
+    color: #fff;
+    border-color: #4CAF50;
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
@@ -450,6 +479,11 @@ footer a:hover {
     }
     
     .nav-menu {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .lang-switch {
         width: 100%;
         justify-content: center;
     }

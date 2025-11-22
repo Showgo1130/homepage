@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="コミロク - 書籍・コミックコレクション管理アプリ">
+    <title>コミロク - ComiLog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/i18n.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Showgo's Apps</h1>
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                <ul class="nav-menu">
+                    <li><a href="../index.html" data-i18n="nav.home">ホーム</a></li>
+                    <li><a href="index.html" data-i18n="nav.apps">アプリ</a></li>
+                    <li><a href="../privacy.html" data-i18n="nav.privacy">プライバシーポリシー</a></li>
+                    <li><a href="../terms.html" data-i18n="nav.terms">利用規約</a></li>
+                    <li><a href="../contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <button data-lang="ja">日本語</button>
+                    <button data-lang="en">English</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="app-detail">
+        <div class="container">
+            <div class="app-header">
+                <div class="app-icon-large">
+                    <img src="../img/comilog-icon.png" alt="コミロク" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22%3E%3Crect width=%22120%22 height=%22120%22 fill=%22%234CAF50%22 rx=%2215%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2250%22 fill=%22white%22%3EC%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="app-info">
+                    <h2>コミロク - ComiLog</h2>
+                    <p class="app-subtitle" data-i18n="app.detail.subtitle">書籍・コミックコレクション管理アプリ</p>
+                    <div class="app-buttons">
+                        <a href="#" class="btn btn-primary" data-i18n="app.detail.googleplay">Google Play で入手（準備中）</a>
+                    </div>
+                    <div class="app-links" style="margin-top: 1rem;">
+                        <a href="comilog-privacy.html" data-i18n="app.detail.privacy">プライバシーポリシー</a> | 
+                        <a href="comilog-terms.html" data-i18n="app.detail.terms">利用規約</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-content">
+                <section class="features">
+                    <h3 data-i18n="app.detail.features">主な機能</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <strong data-i18n="app.detail.feature1.title">シリーズ管理</strong>
+                            <p data-i18n="app.detail.feature1.desc">書籍やコミックをシリーズごとに整理。次に買うべき巻が一目でわかります。</p>
+                        </li>
+                        <li>
+                            <strong data-i18n="app.detail.feature2.title">画像で管理</strong>
+                            <p data-i18n="app.detail.feature2.desc">表紙画像を登録してビジュアルでコレクションを確認できます。</p>
+                        </li>
+                        <li>
+                            <strong data-i18n="app.detail.feature3.title">購入履歴</strong>
+                            <p data-i18n="app.detail.feature3.desc">購入した巻を記録し、コレクションの進捗を追跡できます。</p>
+                        </li>
+                        <li>
+                            <strong data-i18n="app.detail.feature4.title">モダンUI</strong>
+                            <p data-i18n="app.detail.feature4.desc">見やすく使いやすいデザインで快適な操作を実現。</p>
+                        </li>
+                        <li>
+                            <strong data-i18n="app.detail.feature5.title">バックアップ機能</strong>
+                            <p data-i18n="app.detail.feature5.desc">データをエクスポート・インポートして安全に保管できます。</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="screenshots">
+                    <h3 data-i18n="app.detail.screenshots">スクリーンショット</h3>
+                    <div class="screenshot-grid">
+                        <img src="../img/colelog-screen1.png" alt="ホーム画面" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22600%22%3E%3Crect width=%22300%22 height=%22600%22 fill=%22%23f0f0f0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2220%22 fill=%22%23999%22%3E%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%3C/text%3E%3C/svg%3E'">
+                        <img src="../img/colelog-screen2.png" alt="詳細画面" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22600%22%3E%3Crect width=%22300%22 height=%22600%22 fill=%22%23f0f0f0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2220%22 fill=%22%23999%22%3E%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </section>
+
+                <section class="requirements">
+                    <h3 data-i18n="app.detail.requirements">動作環境</h3>
+                    <ul>
+                        <li data-i18n="app.detail.req.android">Android 5.0以上</li>
+                        <li data-i18n="app.detail.req.windows">Windows 10以上</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.rights">&copy; 2025 Showgo. All rights reserved.</p>
+            <p><a href="../privacy.html" data-i18n="nav.privacy">プライバシーポリシー</a> | <a href="../terms.html" data-i18n="nav.terms">利用規約</a> | <a href="../contact.html" data-i18n="nav.contact">お問い合わせ</a></p>
+        </div>
+    </footer>
+</body>
+</html>
