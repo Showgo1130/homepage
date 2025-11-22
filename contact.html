@@ -32,7 +32,7 @@
                 We'd love to hear from you! Whether you have questions, feedback, or need support, feel free to reach out.
             </p>
 
-            <form class="contact-form" method="POST" action="#" onsubmit="return handleSubmit(event)">
+            <form class="contact-form" onsubmit="return handleSubmit(event)">
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required placeholder="Your full name">
@@ -50,7 +50,7 @@
 
                 <div class="form-group">
                     <label for="app">Related App (Optional)</label>
-                    <select id="app" name="app" style="width: 100%; padding: 0.8rem; border: 2px solid #e9ecef; border-radius: 5px; font-size: 1rem; font-family: inherit;">
+                    <select id="app" name="app">
                         <option value="">Select an app...</option>
                         <option value="app1">Amazing App 1</option>
                         <option value="app2">Awesome App 2</option>
